@@ -114,6 +114,7 @@ SESSION_COOKIE_AGE = 60 * 60 * 24 * 30  # One month
 #         'PASSWORD': os.environ['DBPASS'] 
 #     }
 # }
+hostname = os.environ['DBHOST']
 
 DATABASES = {
     'default': {
