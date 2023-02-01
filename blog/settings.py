@@ -105,17 +105,25 @@ SESSION_COOKIE_AGE = 60 * 60 * 24 * 30  # One month
 #         'PORT': '5432',
 #     }
 # }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': os.environ['DBNAME'],
+#         'HOST': os.environ['DBHOST'],
+#         'USER': os.environ['DBUSER'],
+#         'PASSWORD': os.environ['DBPASS'] 
+#     }
+# }
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': os.environ['DBNAME'],
-        'HOST': os.environ['DBHOST'],
+        'HOST': hostname + ".postgres.database.azure.com",
         'USER': os.environ['DBUSER'],
         'PASSWORD': os.environ['DBPASS'] 
     }
 }
-
-
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
 
