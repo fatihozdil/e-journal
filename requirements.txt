@@ -1,0 +1,7 @@
+django
+django-ckeditor
+django_cleanup
+django_email_verification
+django_social_share
+django-utils-six
+whitenoise

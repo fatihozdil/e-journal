@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/71e8e074-96c7-4038-b904-6628b7d60f1d/AppServices/subscriptions/71e8e074-96c7-4038-b904-6628b7d60f1d/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/E-journal-fozdil",
+    "appService.deploySubpath": "."
+}
