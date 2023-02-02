@@ -5,7 +5,7 @@
 - Its backend was written by batuhan bag.
 - The purpose of this project was to publish a journal on behalf of the university and to publish technological articles.
 
-it is hosted in azure [web site link](https://e-journal.azurewebsites.net/)
+it is hosted in azure [web site link](https://ejournal.fatihozdil.xyz/)
 
 Since the project was not published within the university, I published this project myself.
 

@@ -5,7 +5,7 @@ from   blog.development import *
 # that Azure automatically creates for us.
 DEBUG = False
 ALLOWED_HOSTS = [os.environ['WEBSITE_HOSTNAME'],'ejournal.fatihozdil.xyz'] 
-CSRF_TRUSTED_ORIGINS = ['https://'+ os.environ['WEBSITE_HOSTNAME'],'ejournal.fatihozdil.xyz'] 
+CSRF_TRUSTED_ORIGINS = ['https://'+ os.environ['WEBSITE_HOSTNAME'],'https://ejournal.fatihozdil.xyz'] 
 
 # WhiteNoise configuration
 MIDDLEWARE = [                                                                   
