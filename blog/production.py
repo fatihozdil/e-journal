@@ -3,9 +3,9 @@ from   blog.development import *
 
 # Configure the domain name using the environment variable
 # that Azure automatically creates for us.
-DEBUG = True
-ALLOWED_HOSTS = [os.environ['WEBSITE_HOSTNAME']] 
-CSRF_TRUSTED_ORIGINS = ['https://'+ os.environ['WEBSITE_HOSTNAME']] 
+DEBUG = False
+ALLOWED_HOSTS = [os.environ['WEBSITE_HOSTNAME'],'ejournal.fatihozdil.xyz'] 
+CSRF_TRUSTED_ORIGINS = ['https://'+ os.environ['WEBSITE_HOSTNAME'],'ejournal.fatihozdil.xyz'] 
 
 # WhiteNoise configuration
 MIDDLEWARE = [                                                                   
