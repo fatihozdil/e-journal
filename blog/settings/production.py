@@ -1,4 +1,4 @@
-from .settings import *
+from   blog.settings.development import *
 import os
 
 # Configure the domain name using the environment variable
@@ -8,16 +8,16 @@ CSRF_TRUSTED_ORIGINS = ['https://'+ os.environ['WEBSITE_HOSTNAME']] if 'WEBSITE_
 DEBUG = False
 
 # WhiteNoise configuration
-MIDDLEWARE = [
+MIDDLEWARE = [                                                                   
     'django.middleware.security.SecurityMiddleware',
-    'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
-    'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware'
-
+# Add whitenoise middleware after the security middleware                             
+    'whitenoise.middleware.WhiteNoiseMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',                      
+    'django.middleware.common.CommonMiddleware',                                 
+    'django.middleware.csrf.CsrfViewMiddleware',                                 
+    'django.contrib.auth.middleware.AuthenticationMiddleware',                   
+    'django.contrib.messages.middleware.MessageMiddleware',                      
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',                    
 ]
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'  
