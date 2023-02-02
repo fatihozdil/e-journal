@@ -1,5 +1,5 @@
-from   blog.settings.development import *
 import os
+from   blog.settings.development import *
 
 # Configure the domain name using the environment variable
 # that Azure automatically creates for us.
