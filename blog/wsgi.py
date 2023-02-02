@@ -15,7 +15,8 @@ import environ
 # Initialise environment variables
 env = environ.Env()
 environ.Env.read_env()
-name = env('DJANGO_SETTINGS_MODULE')
+name = os.environ['DJANGO_SETTINGS_MODULE'] if 'DJANGO_SETTINGS_MODULE' in os.environ else env('DJANGO_SETTINGS_MODULE')
+
 
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "{name}")
