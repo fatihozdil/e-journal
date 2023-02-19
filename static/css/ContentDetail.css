@@ -200,6 +200,18 @@ p {
   margin-top: 25px;
 }
 
+.article img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+.body-img {
+  height: 400px;
+}
+.body-img div {
+  padding: 0px !important;
+}
+
 /* mobile */
 
 @media screen and (max-width: 768px) {
